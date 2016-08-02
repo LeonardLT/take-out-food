@@ -17,3 +17,4 @@ function loadAllItems() {
     price: 2.00
   }];
 }
+module.exports = loadAllItems();
