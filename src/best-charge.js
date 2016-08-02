@@ -2,6 +2,7 @@ let _ = require('lodash');
 let loadAllItems = require("../src/items");
 let loadPromotions = require("../src/promotions");
 
+//#1
 function formatInputs(inputs) {
   return _.map(inputs, (input) => {
     let [id,count] = input.split("x");
@@ -9,7 +10,7 @@ function formatInputs(inputs) {
   });
 }
 
-
+//#2
 function _getExistentElementById(array, id) {
   return _.find(array, (element) =>element.id === id);
 }
@@ -22,7 +23,7 @@ function buildItems(formattedItems, allItems) {
   });
 }
 
-
+//#3
 function calculateItemsCharge(items) {
   return _.map(items, (item) => {
     let itemCharge = item.price * item.count;
