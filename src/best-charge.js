@@ -58,8 +58,7 @@ function chooseBestPromotions(itemsWithCharge, promotions) {
 
 //#5
 function calculateCharge(itemsWithCharge, bestPromotion) {
-  let charge = _.sumBy(itemsWithCharge, 'itemCharge') - bestPromotion.saved;
-  return charge;
+  return _.sumBy(itemsWithCharge, 'itemCharge') - bestPromotion.saved;
 }
 
 //#6
